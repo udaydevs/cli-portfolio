@@ -12,7 +12,7 @@ Explore my profile, projects, skills, and contact details — all directly from 
 
 ---
 
-## ✨ Features
+## Features
 
 -  Interactive **Terminal UI (TUI)**
 - Keyboard navigation (Arrow keys)
