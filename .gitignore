@@ -1,2 +1,19 @@
 node_modules/
 *.log
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# SSH server private key
+host_ed25519
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*

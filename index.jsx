@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import { render, Box, Text, useInput, Newline } from "ink";
+import { Box, Text, useInput, Newline } from "ink";
 import Gradient from "ink-gradient";
 import BigText from "ink-big-text";
-import About from "./components/about"
-import Projects from "./components/projects";
-import Contact from "./components/contact";
-import Skills from "./components/skills";
+import About from "./components/about.jsx"
+import Projects from "./components/projects.jsx";
+import Contact from "./components/contact.jsx";
+import Skills from "./components/skills.jsx";
 
 const sideBars = ['About', "Projects", "Skills", "Socials"]
-
-const App = () => {
+export default function App({visitor}){
 
   const [i, setI] = useState(0);
   const currentScreen = sideBars[i]
@@ -29,10 +28,10 @@ const App = () => {
   });
 
   return (
-    <Box flexDirection="column" width="100%" borderStyle={"double"} padding={1} >
+    <Box flexDirection="column" width="full" borderStyle={"double"} padding={1} >
       <Box flexDirection="column" alignItems="center" padding={2}>
         <Gradient name="instagram" padding={0}>
-          <BigText text="Uday Pratap Singh" font="block" />
+          <BigText text="Uday  Singh" font="block" />
         </Gradient>
         <Text color="green" bold>Backend Developer | Generative AI Enthusiast</Text>
       </Box>
@@ -63,5 +62,3 @@ const App = () => {
     </Box>
   );
 };
-
-render(<App />);
