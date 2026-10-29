@@ -10,6 +10,7 @@ node_modules/
 
 # SSH server private key
 host_ed25519
+host_ed25519.pub
 
 # Build output
 dist/
